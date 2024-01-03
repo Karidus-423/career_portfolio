@@ -1,5 +1,5 @@
 import { CheckIcon } from '@chakra-ui/icons';
-import { useColorModeValue, Box } from '@chakra-ui/react';
+import { useColorModeValue, Box, Text } from '@chakra-ui/react';
 import { useState } from 'react';
 
 const Clip = ({ children }) => {
