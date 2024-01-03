@@ -42,8 +42,8 @@ const LinkItem = ({ href, target, children, ...props }) => {
     )
 }
 
-const MenuLink = forwardRef((props, href) => (
-    <Link href={href} as={NextLink} {...props} />
+const MenuLink = forwardRef((props, ref) => (
+    <Link ref={ref} as={NextLink} {...props} />
 ))
 
 const Navbar = props => {
