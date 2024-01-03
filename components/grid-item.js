@@ -5,7 +5,7 @@ import { Box, Text, LinkOverlay, LinkBox } from '@chakra-ui/react'
 
 export const GridItem = ({ children, href, title, thumbnail }) => (
     <Box w="100%" textAlign={"center"}>
-        <Linkbox cursor="pointer">
+        <LinkBox cursor="pointer">
             <Image
                 src={thumbnail}
                 alt={title}
@@ -17,9 +17,9 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
                 <Text mt={2}>{title}</Text>
             </LinkOverlay>
             <Text fontSize={14}>{children}</Text>
-        </Linkbox>
+        </LinkBox>
 
-    </Box>
+    </Box >
 )
 
 export const ProjectGridItem = ({

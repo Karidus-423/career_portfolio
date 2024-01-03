@@ -27,7 +27,7 @@ const Clip = ({ children }) => {
                     {children}
                 </Box>
                 {isCopied &&
-                    <Box ml={5} >
+                    <Box ml={5} display={'inline-flex'} alignItems={'center'}>
                         <CheckIcon mr={1} />
                         <Text>Copied!</Text>
                     </Box>

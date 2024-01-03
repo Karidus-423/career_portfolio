@@ -5,6 +5,7 @@ import { EmailIcon, ExternalLinkIcon, TimeIcon } from '@chakra-ui/icons'
 import { FaGithubAlt, FaLinkedin } from 'react-icons/fa'
 import { Meta } from './project-components'
 import Clip from './copy-to-clipboard'
+import UpdateClock from './clock'
 
 const MediumSmallPage = () => {
     return (
@@ -78,6 +79,11 @@ const MediumSmallPage = () => {
                 <Heading as={"h2"} variant="time-zone">
                     <TimeIcon /> Time in Honduras
                 </Heading>
+                <Box mt={2} ml={3}>
+                    <UpdateClock>
+                        00:00:00
+                    </UpdateClock>
+                </Box>
             </Section>
             <Section delay={0.4}>
                 <Heading>

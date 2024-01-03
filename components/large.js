@@ -1,7 +1,7 @@
 import { Container, List, ListItem, Box, Heading, Link, Image, useColorModeValue, Grid, GridItem, ListIcon } from '@chakra-ui/react'
 import { FaGithubAlt, FaLinkedin } from "react-icons/fa"
 import { Meta } from '../components/project-components'
-import Section from '../components/section'
+import Section, { SectionRight } from '../components/section'
 import { ExternalLinkIcon, TimeIcon, EmailIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import Clip from './copy-to-clipboard'
@@ -46,13 +46,15 @@ const LargePage = () => {
                     </Box>
                 </GridItem>
                 <GridItem rowSpan={1} colSpan={3} margin={3} alignSelf={'center'} pt={4}>
-                    <Box borderRadius="lg"
-                        color={useColorModeValue('hsl(180, 12%, 95%)', 'hsl(180, 12%, 5%)')}
-                        bg={useColorModeValue('hsl(180, 10%, 28%)', 'hsl(180, 10%, 72%)')} p={3} align="center">
-                        Welcome to my portfolio website!
-                    </Box>
+                    <SectionRight>
+                        <Box borderRadius="lg"
+                            color={useColorModeValue('hsl(180, 12%, 95%)', 'hsl(180, 12%, 5%)')}
+                            bg={useColorModeValue('hsl(180, 10%, 28%)', 'hsl(180, 10%, 72%)')} p={3} align="center">
+                            Welcome to my portfolio website!
+                        </Box>
+                    </SectionRight>
                 </GridItem>
-                <GridItem colSpan={4} maxW={'60ch'}>
+                <GridItem colSpan={4} maxW={'60ch'} >
                     <Section delay={0.2}>
                         <Heading as="h3" variant="section-title">
                             About
@@ -83,19 +85,19 @@ const LargePage = () => {
                         </BioSection>
                     </Section>
                 </GridItem>
-                <GridItem ml={4} colSpan={3}>
-                    <Section delay={0.6}>
+                <GridItem ml={4} colSpan={3} rowSpan={10} alignItems={'center'}>
+                    <SectionRight delay={0.6}>
                         <Heading as={"h2"} variant="time-zone">
                             <TimeIcon /> Time in Honduras
                         </Heading>
-                        <Box>
+                        <Box mt={5} ml={5}>
                             <UpdateClock>
                                 00:00:00
                             </UpdateClock>
                         </Box>
-                    </Section>
+                    </SectionRight>
                 </GridItem>
-                <GridItem colSpan={7} rowSpan={10}>
+                <GridItem colSpan={3} rowSpan={10}>
                     <Section>
                         <Heading>
                             Contact Information
@@ -128,7 +130,6 @@ const LargePage = () => {
                             </ListItem>
                         </List>
                     </Section>
-
                 </GridItem>
             </Grid>
         </Container >

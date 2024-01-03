@@ -1,4 +1,4 @@
-import { Text, Box } from '@chakra-ui/react';
+import { Text } from '@chakra-ui/react';
 import React, { useState, useEffect } from 'react';
 
 const Clock = () => {
@@ -14,22 +14,22 @@ const Clock = () => {
 
     function getFormattedTime() {
         const now = new Date();
-        let hours = now.getHours();
-        const meridiem = hours >= 12 ? 'PM' : 'AM';
-        hours = hours % 12 || 12;
-        hours = hours.toString().padStart(2, '0');
-        const minutes = now.getMinutes().toString().padStart(2, '0');
-        const seconds = now.getSeconds().toString().padStart(2, '0');
-        return `${hours}:${minutes}:${seconds} ${meridiem}`;
+        const options = {
+            hour: 'numeric',
+            minute: 'numeric',
+            second: 'numeric',
+            hour12: true,
+            timeZone: 'America/Tegucigalpa', // Set the timezone to Honduras
+        };
+
+        return now.toLocaleTimeString('en-US', options);
     }
 
     return (
-        <Box ml={6} mt={8}>
-            <Text fontSize={'2.3rem'}>
-                {time}
-            </Text>
-        </Box>
-    )
+        <Text fontSize={'2.3rem'}>
+            {time}
+        </Text>
+    );
 };
 
 export default Clock;
