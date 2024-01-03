@@ -78,6 +78,8 @@ const MediumSmallPage = () => {
                 <Heading as={"h2"} variant="time-zone">
                     <TimeIcon /> Time in Honduras
                 </Heading>
+                <div class="cleanslate w24tz-current-time w24tz-large" style="display: inline-block !important; visibility: hidden !important; min-width:300px !important; min-height:145px !important;"><p><a href="//24timezones.com/Honduras/time" style="text-decoration: none" class="clock24" id="tz24-1704245826-cc12955-eyJob3VydHlwZSI6MTIsInNob3dkYXRlIjoiMSIsInNob3dzZWNvbmRzIjoiMCIsImNvbnRhaW5lcl9pZCI6ImNsb2NrX2Jsb2NrX2NiNjU5NGJhNDIwNWU3NSIsInR5cGUiOiJkYiIsImxhbmciOiJlbiJ9" title="Time - Honduras" target="_blank">Honduras time</a></p><div id="clock_block_cb6594ba4205e75"></div></div>
+                <script type="text/javascript" src="//w.24timezones.com/l.js" async></script>
             </Section>
             <Section delay={0.4}>
                 <Heading>
