@@ -1,4 +1,4 @@
-export const SunIcon = props => {
+export const SunIcon = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
             <path d="M52 36C52 44.8366 44.8366 52 36 52C27.1634 52 20 44.8366 20 36C20 27.1634 27.1634 20 36 20C44.8366 20 52 27.1634 52 36ZM22.9163 36C22.9163 43.2259 28.7741 49.0837 36 49.0837C43.2259 49.0837 49.0837 43.2259 49.0837 36C49.0837 28.7741 43.2259 22.9163 36 22.9163C28.7741 22.9163 22.9163 28.7741 22.9163 36Z" fill="#5D4B54" />
@@ -7,7 +7,7 @@ export const SunIcon = props => {
     )
 }
 
-export const MoonIcon = props => {
+export const MoonIcon = () => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 72 72" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M24.0045 48.0045C38.3639 48.0045 50.0045 36.3639 50.0045 22.0045C50.0045 18.0712 49.1311 14.3419 47.5677 11C54.45 15.4532 59.0045 23.197 59.0045 32.0045C59.0045 45.8116 47.8117 57.0045 34.0045 57.0045C25.197 57.0045 17.4532 52.45 13 45.5677C16.3419 47.1311 20.0712 48.0045 24.0045 48.0045Z" fill="#D9D9D9" />

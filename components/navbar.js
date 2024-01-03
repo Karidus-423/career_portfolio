@@ -48,6 +48,7 @@ const MenuLink = forwardRef((props, ref) => (
 
 const Navbar = props => {
     const { path } = props
+    const inactiveColor = useColorModeValue('hsl(180, 12%, 5%)', 'hsl(180, 12%, 95%)');
 
     return (
         <Box

@@ -1,4 +1,4 @@
-import { Container, Box, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Beesual from '../public/images/Beesual.png'
 import Section from '../components/section'
 import { ProjectGridItem } from '../components/grid-item'

@@ -13,7 +13,7 @@ float: left;
 }
 `
 
-export const CircleOption = ({ props, children }) => {
+export const CircleOption = ({ children }) => {
     return (
         <NavOption>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 44 43" fill="currentColor">
