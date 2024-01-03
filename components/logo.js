@@ -4,23 +4,34 @@ import { StarIcon } from '@chakra-ui/icons'
 import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  height: 30px;
+  line-height: 20px;
+  padding: 10px;
 
-font-weight: bold;
-font-size: 18px;
-display: inline-flex;
-align-items: center;
-height: 30px;
-line-height: 20px;
-padding: 10px;
+  > svg {
+    transition: 300ms ease;
+  }
 
-> svg {
-    transition: 200ms ease;
-}
+  &:hover > svg {
+    animation: shake 0.8s ease-in-out;
+  }
 
-&:hover > svg {
-    transform: rotate(20deg);
-}
-`
+  @keyframes shake {
+    0%, 100% {
+      transform: rotate(20deg);
+    }
+    25%, 75% {
+      transform: rotate(-40deg);
+    }
+    50% {
+      transform: rotate(60deg);
+    }
+  }
+`;
 
 const Logo = () => {
     return (
