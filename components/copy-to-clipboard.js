@@ -27,9 +27,9 @@ const Clip = ({ children }) => {
                     {children}
                 </Box>
                 {isCopied &&
-                    <Box ml={5} color={useColorModeValue('#00000', '#00000')}>
+                    <Box ml={5} >
                         <CheckIcon mr={1} />
-                        Copied!
+                        <Text>Copied!</Text>
                     </Box>
                 }
             </div>

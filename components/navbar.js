@@ -21,7 +21,7 @@ import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { useRouter } from 'next/router'
 
-const LinkItem = ({ href, path, target, children, ...props }) => {
+const LinkItem = ({ href, target, children, ...props }) => {
     const router = useRouter();
     const active = router.pathname === href
     const inactiveColor = useColorModeValue('hsl(180, 12%, 5%)', 'hsl(180, 12%, 95%)')
@@ -48,7 +48,6 @@ const MenuLink = forwardRef((props, ref) => (
 
 const Navbar = props => {
     const { path } = props
-    const inactiveColor = useColorModeValue('hsl(180, 12%, 5%)', 'hsl(180, 12%, 95%)');
 
     return (
         <Box
