@@ -132,4 +132,6 @@ const Navbar = props => {
     )
 }
 
+Navbar.displayName = 'Navber';
+
 export default Navbar
