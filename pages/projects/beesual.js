@@ -25,7 +25,7 @@ const Project = () => {
                     </ListItem>
                     <ListItem>
                         <Meta> Source Code </Meta>
-                        <Link href="https://www.github.com/Karidus-423/Bee_Hive_Webapp">
+                        <Link href="https://www.github.com/Karidus-423/Bee_Hive_Webapp" target='_blank'>
                             Github <ExternalLinkIcon mx="2px" />
                         </Link>
                     </ListItem>

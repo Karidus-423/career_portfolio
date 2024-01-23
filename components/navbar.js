@@ -84,7 +84,10 @@ const Navbar = props => {
                     <LinkItem href="/projects" path={path}>
                         <CircleOption>Projects</CircleOption>
                     </LinkItem>
-                    <LinkItem href="https://drive.google.com/file/d/1SjE7s4Vi4iJU7mjcapinmnzeJKLyA8Ov/view?usp=sharing" path={path}>
+                    <LinkItem
+                        href="https://drive.google.com/file/d/1SjE7s4Vi4iJU7mjcapinmnzeJKLyA8Ov/view?usp=sharing"
+                        path={path}
+                        target="_blank">
                         <CircleOption>Resume</CircleOption>
                     </LinkItem>
                     <LinkItem
