@@ -9,7 +9,8 @@ const Main = ({ children }) => {
                 <meta name="viewport" content="width=device-witdht, initial-scale=1" />
                 <meta name="description" content="Homepage" />
                 <meta name="author" content="Kennett Puerto" />
-                <title> Kennett Puerto</title>
+                <link rel="icon" href='/images/star-solid.svg' />
+                <title>Kennett Puerto</title>
             </Head>
             <Navbar />
             <Container pt={14} maxW="container.md" maxWidth={'1080px'}>

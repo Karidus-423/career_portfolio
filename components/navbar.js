@@ -105,8 +105,7 @@ const Navbar = props => {
                 </Stack>
 
                 <Box flex={1} align="right">
-                    <ThemeToggleButton />
-                    <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+                    <Box mr={3} display={{ base: 'inline-block', md: 'none' }}>
                         <Menu isLazy id='navbar-menu' backgroundColor={useColorModeValue('hsl(192, 12%, 8%)', 'hsl(192, 12%, 92%)')}>
                             <MenuButton
                                 as={IconButton}
@@ -129,6 +128,7 @@ const Navbar = props => {
                         </Menu>
 
                     </Box>
+                    <ThemeToggleButton />
                 </Box>
             </Container>
         </Box >
