@@ -59,10 +59,10 @@ const LargePage = () => {
                         <Heading as="h3" variant="section-title">
                             About
                         </Heading>
-                        <p> Kennett is currently working as an undergraduate research assistant
+                        <p>Kennett is currently working as an undergraduate research assistant
                             with developing data visualization tools and developing hardware
                             to collect such data. On his off time he likes studying Japanese,
-                            contributing to open source projects and reading.
+                            learning about new tools in the software world and reading.
                         </p>
                     </Section>
                     <Section delay={0.3}>
